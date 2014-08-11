@@ -47,6 +47,6 @@ typograf = Typograf()
 def typo(text, is_para=True):
     typograf.use_p = is_para
     try:
-        return typograf.process(text)
+        return typograf.process(text).strip()
     except:
-        return text
+        return text.strip()
